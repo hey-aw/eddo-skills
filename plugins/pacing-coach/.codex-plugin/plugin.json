@@ -1,0 +1,18 @@
+{
+  "name": "pacing-coach",
+  "version": "0.1.0",
+  "description": "Guide teachers through a four-phase OpenSciEd pacing workshop.",
+  "author": {
+    "name": "Val"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Pacing Coach",
+    "shortDescription": "Build a realistic OpenSciEd pacing plan.",
+    "longDescription": "Pacing Coach guides teachers and instructional leaders through a four-phase planning method: count real instructional days, estimate unit lengths, map units to dates, and deep-dive Unit 1.",
+    "developerName": "Val",
+    "category": "Productivity",
+    "capabilities": ["guided-planning", "pacing-plan"],
+    "defaultPrompt": "Use Pacing Coach to help me create a realistic pacing plan."
+  }
+}
