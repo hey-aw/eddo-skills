@@ -1,0 +1,23 @@
+{
+  "name": "openscied-resource-finder",
+  "version": "0.1.0",
+  "description": "Find, compare, and synthesize OpenSciEd curriculum materials with grounded citations.",
+  "author": {
+    "name": "Eddo"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "OpenSciEd Resource Finder",
+    "shortDescription": "Find grounded OpenSciEd curriculum evidence.",
+    "longDescription": "OpenSciEd Resource Finder searches an authenticated read-only curriculum library and retrieves bounded excerpts for grounded discovery, comparison, and synthesis.",
+    "developerName": "Eddo",
+    "category": "Productivity",
+    "capabilities": [
+      "curriculum-discovery",
+      "grounded-retrieval",
+      "evidence-synthesis"
+    ],
+    "defaultPrompt": "Find the OpenSciEd materials I need and cite the source evidence."
+  },
+  "mcpServers": "./.mcp.json"
+}

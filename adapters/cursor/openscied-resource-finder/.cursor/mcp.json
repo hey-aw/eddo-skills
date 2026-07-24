@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "openscied-library": {
+      "type": "http",
+      "url": "${EDDO_OPENSCIED_MCP_URL}",
+      "headers": {
+        "Authorization": "Bearer ${EDDO_OPENSCIED_MCP_TOKEN}"
+      }
+    }
+  }
+}

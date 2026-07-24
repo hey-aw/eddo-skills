@@ -8,7 +8,19 @@
       "name": "pacing-coach",
       "source": {
         "source": "local",
-        "path": "./plugins/pacing-coach"
+        "path": "./adapters/codex/pacing-coach"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "openscied-resource-finder",
+      "source": {
+        "source": "local",
+        "path": "./adapters/codex/openscied-resource-finder"
       },
       "policy": {
         "installation": "AVAILABLE",

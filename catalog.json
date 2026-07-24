@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "name": "eddo-instructional-skills",
+  "displayName": "Eddo Instructional Skills",
+  "skills": [
+    {
+      "name": "pacing-coach",
+      "displayName": "Pacing Coach",
+      "description": "Guide teachers through Val's four-phase OpenSciEd pacing workshop.",
+      "shortDescription": "Build a realistic OpenSciEd pacing plan.",
+      "longDescription": "Pacing Coach guides teachers and instructional leaders through a four-phase planning method: count real instructional days, estimate unit lengths, map units to dates, and deep-dive Unit 1.",
+      "author": "Val",
+      "category": "Productivity",
+      "capabilities": [
+        "guided-planning",
+        "pacing-plan"
+      ],
+      "path": "skills/pacing-coach",
+      "defaultPrompt": "Use Pacing Coach to help me create a realistic pacing plan.",
+      "adapters": [
+        "codex",
+        "claude",
+        "cursor"
+      ]
+    },
+    {
+      "name": "openscied-resource-finder",
+      "displayName": "OpenSciEd Resource Finder",
+      "description": "Find, compare, and synthesize OpenSciEd curriculum materials with grounded citations.",
+      "shortDescription": "Find grounded OpenSciEd curriculum evidence.",
+      "longDescription": "OpenSciEd Resource Finder searches an authenticated read-only curriculum library and retrieves bounded excerpts for grounded discovery, comparison, and synthesis.",
+      "author": "Eddo",
+      "category": "Productivity",
+      "capabilities": [
+        "curriculum-discovery",
+        "grounded-retrieval",
+        "evidence-synthesis"
+      ],
+      "path": "skills/openscied-resource-finder",
+      "service": "openscied-library",
+      "defaultPrompt": "Find the OpenSciEd materials I need and cite the source evidence.",
+      "adapters": [
+        "codex",
+        "claude",
+        "cursor"
+      ]
+    }
+  ],
+  "services": [
+    {
+      "id": "openscied-library",
+      "manifest": "services/openscied-library/mcp.json"
+    }
+  ]
+}

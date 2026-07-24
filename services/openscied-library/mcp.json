@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "openscied-library",
+  "displayName": "OpenSciEd Library",
+  "description": "Read-only discovery and evidence retrieval for the Eddo-managed OpenSciEd curriculum corpus.",
+  "protocol": "mcp",
+  "transport": {
+    "type": "streamable-http",
+    "urlEnvironmentVariable": "EDDO_OPENSCIED_MCP_URL"
+  },
+  "authentication": {
+    "type": "bearer",
+    "tokenEnvironmentVariable": "EDDO_OPENSCIED_MCP_TOKEN",
+    "required": true
+  },
+  "access": "read-only",
+  "citationScheme": "openscied",
+  "tools": [
+    {
+      "name": "list_curriculum",
+      "description": "Browse indexed curriculum materials using optional grade and unit filters.",
+      "arguments": {
+        "grade": "string?",
+        "unit": "string?",
+        "cursor": "string?",
+        "limit": "integer?"
+      },
+      "returns": "SearchPage"
+    },
+    {
+      "name": "search_materials",
+      "description": "Search indexed material text and metadata with structured filters.",
+      "arguments": {
+        "query": "string",
+        "grade": "string?",
+        "unit": "string?",
+        "lesson": "string?",
+        "kinds": "string[]?",
+        "extensions": "string[]?",
+        "cursor": "string?",
+        "limit": "integer?"
+      },
+      "returns": "SearchPage"
+    },
+    {
+      "name": "read_material",
+      "description": "Read a bounded excerpt from an indexed material.",
+      "arguments": {
+        "material_id": "string",
+        "locator": "string?",
+        "max_chars": "integer?"
+      },
+      "returns": "MaterialExcerpt"
+    },
+    {
+      "name": "get_index_status",
+      "description": "Report index version, freshness, coverage, and extraction failures.",
+      "arguments": {},
+      "returns": "IndexStatus"
+    }
+  ],
+  "types": {
+    "MaterialRef": [
+      "id",
+      "title",
+      "grade",
+      "unit",
+      "lesson",
+      "kind",
+      "extension",
+      "citation_uri",
+      "source_modified_time"
+    ],
+    "SearchPage": [
+      "results",
+      "next_cursor",
+      "total_estimate",
+      "index_version"
+    ],
+    "MaterialExcerpt": [
+      "material",
+      "text",
+      "locator",
+      "truncated",
+      "next_locator"
+    ],
+    "IndexStatus": [
+      "version",
+      "built_at",
+      "document_count",
+      "failed_count"
+    ]
+  },
+  "security": {
+    "absolutePaths": false,
+    "arbitraryFileReads": false,
+    "binaryDownloads": false,
+    "mutationTools": false,
+    "boundedPagination": true,
+    "boundedExcerpts": true
+  }
+}
