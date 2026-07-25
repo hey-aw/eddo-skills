@@ -4,7 +4,7 @@ Use this bundled table as the primary source for `Recommended Days` in Phase 2. 
 
 Do not change a value in this reference to account for a local calendar. Put teacher or local changes in `Adjustment (+/-)`.
 
-External verification is optional. When the teacher requests it, use either the public read-only OpenSciEd MCP server or the official OpenSciEd website. Identify and cite the source used, preserve any conflicting values, and ask the teacher which value to carry into the plan.
+External verification is optional. When the teacher requests it, search official OpenSciEd web sources, open the exact unit page or curriculum file, and cite its direct link. Do not treat search snippets or third-party pages as verification. Preserve any conflicting values and ask the teacher which value to carry into the plan.
 
 ## Source status
 
