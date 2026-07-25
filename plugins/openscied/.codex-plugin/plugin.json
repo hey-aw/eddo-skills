@@ -1,0 +1,34 @@
+{
+  "name": "openscied",
+  "version": "0.1.0",
+  "description": "Plan OpenSciEd pacing and find cited curriculum evidence through a public read-only library.",
+  "author": {
+    "name": "Eddo",
+    "url": "https://github.com/hey-aw"
+  },
+  "homepage": "https://github.com/hey-aw/eddo-skills/tree/main/plugins/openscied",
+  "repository": "https://github.com/hey-aw/eddo-skills",
+  "keywords": [
+    "openscied",
+    "curriculum",
+    "pacing",
+    "instructional-planning",
+    "education"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "OpenSciEd",
+    "shortDescription": "Plan pacing and find cited curriculum evidence.",
+    "longDescription": "OpenSciEd combines Val's full four-phase Pacing Coach with a Resource Finder connected to Eddo's public, read-only OpenSciEd curriculum library.",
+    "developerName": "Eddo",
+    "category": "Productivity",
+    "capabilities": [
+      "guided-planning",
+      "curriculum-discovery",
+      "grounded-retrieval",
+      "evidence-synthesis"
+    ],
+    "defaultPrompt": "Help me plan OpenSciEd instruction and find cited curriculum evidence."
+  },
+  "mcpServers": "./.mcp.json"
+}
