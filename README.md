@@ -4,7 +4,20 @@ Reusable instructional expertise, packaged as agent skills and plugins.
 
 ## Install the collection
 
-Add `https://github.com/hey-aw/eddo-skills` as a plugin marketplace in Codex, then install a plugin listed in `marketplace.json`. Start a new task after installation so its skills and tools are available.
+In the Codex marketplace UI, add this GitHub source URL:
+
+`https://github.com/hey-aw/eddo-skills`
+
+Codex will load the repo marketplace from `.agents/plugins/marketplace.json`. Choose **Eddo Instructional Skills**, then install **OpenSciEd** (recommended) or **Pacing Coach**.
+
+The equivalent CLI route is:
+
+```sh
+codex plugin marketplace add https://github.com/hey-aw/eddo-skills --ref main
+codex plugin add openscied@eddo-skills
+```
+
+Start a new task after installation so the selected plugin's skills and tools are available.
 
 ## Recommended OpenSciEd install
 
@@ -33,4 +46,4 @@ The combined plugin connects anonymously to `https://openscied-library-mcp.verce
 
 ## Add a new skill
 
-Each skill lives in its own `plugins/<skill-name>` directory and includes a `.codex-plugin/plugin.json` manifest plus its `skills/` content. Add the new plugin to `marketplace.json` to make it discoverable.
+Each skill lives in its own `plugins/<skill-name>` directory and includes a `.codex-plugin/plugin.json` manifest plus its `skills/` content. Add the new plugin to the canonical `.agents/plugins/marketplace.json` catalog to make it installable from the repository URL. Keep the root `marketplace.json` compatibility mirror synchronized.
