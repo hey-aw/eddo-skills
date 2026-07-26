@@ -76,12 +76,11 @@ Label the sequence as confirmed when the teacher confirms it. If confirmation is
 
 Read [references/unit-lengths.md](references/unit-lengths.md) and use its embedded table as the primary pacing reference for OpenSciEd `Recommended Days`. Preserve the source notes and provisional labels in that reference. Do not require external lookup before using a value from the embedded table.
 
-Offer optional verification when the teacher wants a current or unit-specific check:
+Offer optional web verification when the teacher wants a current or unit-specific check. Search for the relevant Unit Overview, Quick Start Guide, unit page, or direct OpenSciEd-hosted curriculum file.
 
-1. Retrieve the relevant Unit Overview or Quick Start Guide through the public, read-only OpenSciEd MCP server.
-2. Consult the relevant guidance on the official OpenSciEd website.
+Use targeted queries against official OpenSciEd sources, such as `site:openscied.org [unit code] [resource]`, and open the exact source before using it. Cite the direct unit page or curriculum-file link. Search snippets and third-party pages are not verification.
 
-The public MCP server is a convenience layer for bounded access to curriculum materials, not a substitute for verification against the official source. When verification is requested, identify and cite the source used. If a verified value conflicts with the embedded table, surface the conflict and ask the teacher which value to use; do not silently overwrite it.
+If the official source cannot be located or web search is unavailable, state that limitation and continue with the embedded value and its existing source status. Do not claim retrieval that did not occur. If a verified value conflicts with the embedded table, surface the conflict and ask the teacher which value to use; do not silently overwrite it.
 
 For a non-OpenSciEd unit, use and cite the timeline in the relevant curriculum guide. If the embedded reference does not cover a unit and no verification route yields clear guidance, leave the value unresolved or label it explicitly as provisional and state its basis; do not substitute a generic grade-band guess.
 
