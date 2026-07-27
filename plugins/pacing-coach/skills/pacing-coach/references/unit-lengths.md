@@ -77,4 +77,4 @@ Approximate spans are seven weeks per unit in kindergarten, eight weeks in grade
 | Physics | P.5 | Electromagnetic Radiation (Microwaves & Communication) | 30 |
 | Physics | P.6 | Stars & the Big Bang (The Cosmos) | 15 |
 
-Biology, chemistry, and physics each total 149 recommended days in the supplied chart.
+The listed Biology units total 129 recommended days. The supplied chart labels the Biology course total as 149 days, but its five unit values sum to 129; treat 149 as an internal source inconsistency pending official verification. Chemistry and physics each total 149 recommended days.
