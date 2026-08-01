@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "openscied-library": {
+      "type": "http",
+      "url": "https://openscied-library-mcp.vercel.app/mcp"
+    }
+  }
+}

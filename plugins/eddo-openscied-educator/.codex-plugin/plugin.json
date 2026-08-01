@@ -1,0 +1,38 @@
+{
+  "name": "eddo-openscied-educator",
+  "version": "0.1.0",
+  "description": "Plan OpenSciEd instruction and find cited curriculum evidence.",
+  "author": {
+    "name": "Eddo Learning",
+    "url": "https://github.com/eddo-ai"
+  },
+  "homepage": "https://github.com/eddo-ai/eddo-skills/tree/main/plugins/eddo-openscied-educator",
+  "repository": "https://github.com/eddo-ai/eddo-skills",
+  "keywords": [
+    "openscied",
+    "educator",
+    "curriculum",
+    "pacing",
+    "instructional-planning"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "OpenSciEd Educator",
+    "shortDescription": "Plan pacing and find cited curriculum evidence.",
+    "longDescription": "A public educator role combining Val's four-phase Pacing Coach with Eddo's bounded, read-only OpenSciEd Resource Finder.",
+    "developerName": "Eddo Learning",
+    "category": "Productivity",
+    "capabilities": [
+      "guided-planning",
+      "curriculum-discovery",
+      "grounded-retrieval",
+      "evidence-synthesis"
+    ],
+    "defaultPrompt": [
+      "Help me build a realistic OpenSciEd pacing plan.",
+      "Find cited OpenSciEd curriculum evidence for my lesson.",
+      "Map an OpenSciEd unit onto my school calendar."
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "sourceRoot": "skills",
+  "plugins": {
+    "eddo-openscied-educator": {
+      "skills": [
+        "pacing-coach",
+        "openscied-resource-finder"
+      ]
+    },
+    "pacing-coach": {
+      "skills": [
+        "pacing-coach"
+      ]
+    },
+    "openscied": {
+      "skills": [
+        "pacing-coach",
+        "openscied-resource-finder"
+      ]
+    }
+  }
+}

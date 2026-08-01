@@ -4,10 +4,10 @@
   "description": "Plan OpenSciEd pacing and find cited curriculum evidence through a public read-only library.",
   "author": {
     "name": "Eddo",
-    "url": "https://github.com/hey-aw"
+    "url": "https://github.com/eddo-ai"
   },
-  "homepage": "https://github.com/hey-aw/eddo-skills/tree/main/plugins/openscied",
-  "repository": "https://github.com/hey-aw/eddo-skills",
+  "homepage": "https://github.com/eddo-ai/eddo-skills/tree/main/plugins/openscied",
+  "repository": "https://github.com/eddo-ai/eddo-skills",
   "keywords": [
     "openscied",
     "curriculum",
@@ -28,7 +28,9 @@
       "grounded-retrieval",
       "evidence-synthesis"
     ],
-    "defaultPrompt": "Help me plan OpenSciEd instruction and find cited curriculum evidence."
+    "defaultPrompt": [
+      "Help me plan OpenSciEd instruction and find cited curriculum evidence."
+    ]
   },
   "mcpServers": "./.mcp.json"
 }

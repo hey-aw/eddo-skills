@@ -1,25 +1,31 @@
-# Eddo Instructional Skills
+# Eddo Community Skills
 
 Reusable instructional expertise, packaged as agent skills and plugins.
 
-## Install Pacing Coach
+## Install the community marketplace
 
 In the Codex marketplace UI, add this GitHub source URL:
 
-`https://github.com/hey-aw/eddo-skills`
+`https://github.com/eddo-ai/eddo-skills`
 
-Codex will load the repo marketplace from `.agents/plugins/marketplace.json`. Choose **Eddo Instructional Skills**, then install **Pacing Coach**.
+Codex will load the repo marketplace from `.agents/plugins/marketplace.json`. Install **OpenSciEd Educator** for the complete public role or **Pacing Coach** for pacing alone.
 
 The equivalent CLI route is:
 
 ```sh
-codex plugin marketplace add https://github.com/hey-aw/eddo-skills --ref main
-codex plugin add pacing-coach@eddo-skills
+codex plugin marketplace add https://github.com/eddo-ai/eddo-skills --ref main
+codex plugin add eddo-openscied-educator@eddo-skills
 ```
 
 Start a new task after installation so the skill is available.
 
-## Available now
+## Available roles
+
+### OpenSciEd Educator
+
+OpenSciEd Educator combines Pacing Coach with the public, read-only OpenSciEd Resource Finder. It supports focused teacher requests for exact resources and lessons, remembered activities, materials and lab preparation, summaries, DQB and discussion preparation, differentiation, substitute and first-year support, terminology, assessment and rubric guidance, and faithful student-instruction rewrites.
+
+Curriculum claims require stable archive citations and verified, shareable public OpenSciEd source pages. The skill never exposes private Drive identifiers, local paths, index internals, or other non-public archive inputs.
 
 ### Pacing Coach
 
@@ -32,11 +38,9 @@ Pacing Coach packages Val's complete four-phase OpenSciEd pacing workflow. It he
 
 The plugin is self-contained and has no MCP or hosted-service dependency. Its complete source lives at `plugins/pacing-coach`.
 
-## OpenSciEd pack status
+## Legacy OpenSciEd pack
 
-The previously published `openscied` beta combined Pacing Coach with an MCP-backed Resource Finder. Its marketplace entry is retained as `NOT_AVAILABLE` so the published identity and source history remain explicit, but it is not currently offered for installation from `main`.
-
-The beta source remains under `plugins/openscied` while Resource Finder continues on a feature branch. The pack can return to `AVAILABLE` after both Pacing Coach and Resource Finder are release-ready and verified together.
+The previously published `openscied` beta is retained as `NOT_AVAILABLE` so its identity and source history remain explicit. `eddo-openscied-educator` is its role-based, release-validated replacement.
 
 ## Release policy
 
@@ -47,4 +51,4 @@ The beta source remains under `plugins/openscied` while Resource Finder continue
 
 ## Add a new skill
 
-Each skill lives in its own `plugins/<skill-name>` directory and includes a `.codex-plugin/plugin.json` manifest plus its `skills/` content. Add the new plugin to the canonical `.agents/plugins/marketplace.json` catalog to make it installable from the repository URL. Keep the root `marketplace.json` compatibility mirror synchronized.
+Canonical skill source lives under `skills/<skill-name>`. Role membership is declared in `catalog/roles.json`; run `python3 scripts/package_plugins.py` to build self-contained plugin copies. Add the plugin to `.agents/plugins/marketplace.json`, keep new entries unavailable until verified, and keep the root compatibility mirror synchronized.

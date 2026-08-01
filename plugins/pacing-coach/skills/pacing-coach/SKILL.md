@@ -41,7 +41,7 @@ If the teacher wants you to look it up:
 - Separate verified calendar facts from estimates or interpretations. Do not present search snippets, third-party calendar sites, or inferred dates as district-verified facts.
 - Surface conflicts or unclear dates instead of silently choosing one.
 
-In either path, still ask about school- and teacher-specific details that a public district calendar may omit, including bell or rotation schedules, late starts or early releases, school-only professional-development days, testing windows, conferences, assemblies, field trips, and other regular disruptions.
+In either path, still ask about school- and teacher-specific details that a public district calendar may omit, including bell or rotation schedules, late starts or early releases, school-only professional-development days, testing windows, conferences, assemblies, off-campus events, and other regular disruptions.
 
 Before calculating availability, gather the teacher's schedule model and ask them to confirm your summary:
 
