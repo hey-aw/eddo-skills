@@ -13,6 +13,8 @@
     "developerName": "Val",
     "category": "Productivity",
     "capabilities": ["guided-planning", "pacing-plan"],
-    "defaultPrompt": "Use Pacing Coach to help me create a realistic pacing plan."
+    "defaultPrompt": [
+      "Use Pacing Coach to help me create a realistic pacing plan."
+    ]
   }
 }

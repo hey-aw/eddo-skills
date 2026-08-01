@@ -1,9 +1,21 @@
 {
   "name": "eddo-skills",
   "interface": {
-    "displayName": "Eddo Instructional Skills"
+    "displayName": "Eddo Community Skills"
   },
   "plugins": [
+    {
+      "name": "eddo-openscied-educator",
+      "source": {
+        "source": "local",
+        "path": "./plugins/eddo-openscied-educator"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
     {
       "name": "pacing-coach",
       "source": {
