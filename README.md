@@ -2,47 +2,48 @@
 
 Reusable instructional expertise, packaged as agent skills and plugins.
 
-## Install the collection
+## Install Pacing Coach
 
 In the Codex marketplace UI, add this GitHub source URL:
 
 `https://github.com/hey-aw/eddo-skills`
 
-Codex will load the repo marketplace from `.agents/plugins/marketplace.json`. Choose **Eddo Instructional Skills**, then install **OpenSciEd** (recommended) or **Pacing Coach**.
+Codex will load the repo marketplace from `.agents/plugins/marketplace.json`. Choose **Eddo Instructional Skills**, then install **Pacing Coach**.
 
 The equivalent CLI route is:
 
 ```sh
 codex plugin marketplace add https://github.com/hey-aw/eddo-skills --ref main
-codex plugin add openscied@eddo-skills
+codex plugin add pacing-coach@eddo-skills
 ```
 
-Start a new task after installation so the selected plugin's skills and tools are available.
+Start a new task after installation so the skill is available.
 
-## Recommended OpenSciEd install
-
-### OpenSciEd
-
-The `openscied` plugin is the default educator installation. It combines:
-
-- Val's complete four-phase Pacing Coach workflow
-- OpenSciEd Resource Finder with a preconfigured connection to the public, read-only OpenSciEd Library MCP beta
-
-Resource Finder supports structured grade, unit, lesson, and material navigation; bounded source reads; curriculum citations; and explicit guardrails for teacher control, inquiry, sensemaking, and lesson coherence.
-
-The complete package lives at `plugins/openscied`.
-
-## Standalone install
+## Available now
 
 ### Pacing Coach
 
-Install `pacing-coach` separately when you want Val's pacing workflow without the curriculum-library connection. It helps teachers and instructional leaders count real instructional days, estimate and map units, and create a practical Unit 1 plan that protects inquiry and sensemaking.
+Pacing Coach packages Val's complete four-phase OpenSciEd pacing workflow. It helps teachers and instructional leaders:
 
-The complete source lives at `plugins/pacing-coach`.
+- Count real instructional days
+- Sketch unit durations from source guidance
+- Map units onto a school calendar
+- Deep-dive Unit 1 while protecting inquiry and sensemaking
 
-## Public beta access model
+The plugin is self-contained and has no MCP or hosted-service dependency. Its complete source lives at `plugins/pacing-coach`.
 
-The combined plugin connects anonymously to `https://openscied-library-mcp.vercel.app/mcp`. The service exposes only bounded browse, search, excerpt-read, and index-status operations. The plugin includes no credentials and no write, synchronization, refresh, upload, or publishing capabilities.
+## OpenSciEd pack status
+
+The previously published `openscied` beta combined Pacing Coach with an MCP-backed Resource Finder. Its marketplace entry is retained as `NOT_AVAILABLE` so the published identity and source history remain explicit, but it is not currently offered for installation from `main`.
+
+The beta source remains under `plugins/openscied` while Resource Finder continues on a feature branch. The pack can return to `AVAILABLE` after both Pacing Coach and Resource Finder are release-ready and verified together.
+
+## Release policy
+
+- Treat `main` as the published release channel.
+- List only mature plugins as `AVAILABLE`.
+- Develop new skills and packs on feature branches until they are ready to publish.
+- Preserve or explicitly mark previously published packages unavailable instead of silently deleting them.
 
 ## Add a new skill
 
